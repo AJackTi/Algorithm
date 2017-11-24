@@ -3,12 +3,8 @@
 
 from random import randint
 
-lst = []
-
-for i in range(10):
-	lst.append(randint(1,20))
-
-print lst
+def create_list():
+	return [randint(1,20) for i in range(20)]
 
 def selection(lst):
 	i = 0
@@ -22,6 +18,8 @@ def selection(lst):
 			return lst
 
 if __name__ == "__main__":
+	lst = create_list()
+	print lst
 	if len(lst) == 1:
 		print lst
 	else:

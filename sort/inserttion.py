@@ -4,25 +4,27 @@
 # First, I will create list with many random numbers
 from random import randint
 
-list = []
+def create_list():
+	return [randint(1,100) for i in range(20)]
 
-for i in range(100):
-	list.append(randint(0,100))
+def inserttion(lst):
+	for i in range(1,len(lst)):
+		j = i - 1
+		if lst[i] > lst[j]:
+			continue
+		while j >= 0 and lst[i]<lst[j]:
+			key = j
+			j = j - 1
+		try:
+			lst.insert(key,lst[i])
+			key = -1
+			del lst[i+1]
+		except:
+			pass
 
-print list
-	
-for i in range(1,len(list)):
-	j = i - 1
-	if list[i] > list[j]:
-		continue
-	while j >= 0 and list[i]<list[j]:
-		key = j
-		j = j - 1
-	try:
-		list.insert(key,list[i])
-		key = -1
-		del list[i+1]
-	except:
-		pass
+	print lst
 
-print list
+if __name__ == "__main__":
+	lst = create_list()
+	print lst
+	inserttion(lst)
