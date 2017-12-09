@@ -1,3 +1,6 @@
+# AJack Ti
+# 7/12/2017
+
 from random import randint
 import math
 # -*- coding: utf-8 -*-
