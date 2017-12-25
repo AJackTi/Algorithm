@@ -23,7 +23,7 @@ class HashMap():
         index = self._get_index(key)
         count = 0
         for arr in self.arr[index]:
-            if arr[count] == key:
+            if arr[0] == key:
                 return self.arr[index][count]
             count += 1
         return None
@@ -37,20 +37,23 @@ class HashMap():
             return False            
 
     def presentation(self):
-        print "PRINT HASH"
-        for arr in self.arr:
-            if arr:
-                print arr
+        print self.arr
+        # print "PRINT HASH"
+        # for arr in self.arr:
+        #     if arr:
+        #         print arr
     
 hash = HashMap()
 hash.insert("ABCDEF", 20)
 hash.insert("abcdef", 30)
+hash.insert("i", 50)
+hash.insert("di", 50)
 hash.insert("AJack Ti", 20)
-hash.insert("AJack Ti", 40)
+# hash.insert("AJack Ti", 40)
 hash.presentation()
 
-print "FIND: " + str(hash.find("AJack Ti"))
-print "DELETE AJack Ti" 
-hash.delete("AJack Ti")
-print "Again: "
-hash.presentation()
+print "FIND: " + str(hash.find("di"))
+# print "DELETE AJack Ti" 
+# hash.delete("AJack Ti")
+# print "Again: "
+# hash.presentation()
