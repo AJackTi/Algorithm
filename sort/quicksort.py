@@ -42,8 +42,8 @@ def Partition(lst, right, left):
 
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
+	print (lst)
 	left = 0
 	right = len(lst)-1
 	Quicksort(lst, right, left)
-	print lst
+	print (lst)

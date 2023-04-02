@@ -43,5 +43,5 @@ def bucketsort(lst):
 
 if __name__ == "__main__":
     lst = create_list()
-    print lst
-    print bucketsort(lst)
+    print (lst)
+    print (bucketsort(lst))

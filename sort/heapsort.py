@@ -39,4 +39,4 @@ def heapsort(lst):
 
 if __name__ == "__main__":
 	lst = create_list()
-	print heapsort(lst)
+	print (heapsort(lst))

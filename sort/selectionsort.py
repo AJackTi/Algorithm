@@ -19,8 +19,8 @@ def selection(lst):
 
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
+	print (lst)
 	if len(lst) == 1:
-		print lst
+		print (lst)
 	else:
-		print selection(lst)
+		print (selection(lst))

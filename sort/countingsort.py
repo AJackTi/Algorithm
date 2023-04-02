@@ -40,6 +40,6 @@ def countingsort(lst):
 
 if __name__ == "__main__":
     lst = createlist()
-    print lst
+    print (lst)
     # lst = [9,8,7,6,5,3,2,1]
-    print countingsort(lst)
+    print (countingsort(lst))

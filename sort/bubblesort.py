@@ -28,5 +28,5 @@ def bubble(lst):
 
 if __name__ == "__main__":
 	lst = createlist()
-	print bubble(lst)
+	print (bubble(lst))
 		

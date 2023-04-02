@@ -38,5 +38,5 @@ def merge_sort(lst):
 
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
-	print merge_sort(lst)
+	print (lst)
+	print (merge_sort(lst))

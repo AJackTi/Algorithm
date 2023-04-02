@@ -33,5 +33,5 @@ def radixsort(lst):
 
 if __name__ == "__main__":
 	lst = createlist()
-	print lst
-	print radixsort(lst)
+	print (lst)
+	print (radixsort(lst))

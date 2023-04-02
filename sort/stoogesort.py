@@ -20,5 +20,5 @@ def stoogesort(L, i=0, j=None):
 	return L
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
-	print stoogesort(lst,0)
+	print (lst)
+	print (stoogesort(lst,0))

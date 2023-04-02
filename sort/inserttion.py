@@ -22,9 +22,9 @@ def inserttion(lst):
 		except:
 			pass
 
-	print lst
+	print (lst)
 
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
+	print (lst)
 	inserttion(lst)
