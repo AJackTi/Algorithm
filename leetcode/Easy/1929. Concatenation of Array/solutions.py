@@ -1,7 +1,7 @@
 def getConcatenation(nums: list[int]) -> list[int]:
     output = []
     for i in range(len(nums)*2):
-        output.append(i%len(nums))
+        output.append(nums[i%len(nums)])
     
     return output
 
