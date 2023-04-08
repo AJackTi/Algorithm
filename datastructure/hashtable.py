@@ -50,4 +50,4 @@ if __name__ == "__main__":
 	table.put("car", 30)
 	table.put("table", 40)
 
-	print table.get("orange")
+	print(table.get("orange"))

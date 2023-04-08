@@ -50,5 +50,5 @@ str_input = str_Input()
 arr = cryto_ceasar(str_input)
 count = 0
 for i in arr:
-    print "key=", count, "result: ", i
+    print("key=", count, "result: ", i)
     count+=1

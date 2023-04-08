@@ -57,5 +57,5 @@ if __name__ == "__main__":
     # Usage: python rot_n.py -r 1 -i "Hello"
     input, rot = parse()
     rot = int(rot)
-    print rotn_encrypt(input, rot)
-    print rotn_decrypt( rotn_encrypt(input, rot), rot )
+    print(rotn_encrypt(input, rot))
+    print(rotn_decrypt( rotn_encrypt(input, rot), rot ))

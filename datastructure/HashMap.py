@@ -37,11 +37,11 @@ class HashMap():
             return False            
 
     def presentation(self):
-        print self.arr
-        # print "PRINT HASH"
+        print(self.arr)
+        # print("PRINT HASH")
         # for arr in self.arr:
         #     if arr:
-        #         print arr
+        #         print(arr)
     
 hash = HashMap()
 hash.insert("ABCDEF", 20)
@@ -52,8 +52,8 @@ hash.insert("AJack Ti", 20)
 # hash.insert("AJack Ti", 40)
 hash.presentation()
 
-print "FIND: " + str(hash.find("di"))
-# print "DELETE AJack Ti" 
+print("FIND: " + str(hash.find("di")))
+# print("DELETE AJack Ti" )
 # hash.delete("AJack Ti")
-# print "Again: "
+# print("Again: ")
 # hash.presentation()

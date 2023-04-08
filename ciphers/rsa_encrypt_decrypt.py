@@ -104,20 +104,20 @@ if __name__ == "__main__":
 	while d == None:
 		p,q,n,phi_n = init()
 		d = creat_private_key(phi_n, e)
-	print p,q,n,phi_n
-	print e, d
+	print(p,q,n,phi_n)
+	print(e, d)
 
 
 	lst_transfer = transfer_ascii("Hello I am AJack Ti")
 
-	print lst_transfer
+	print(lst_transfer)
 
 	# # encrypt
 	str_encrypt, list_encrypt = encrypt(lst_transfer, e, n)
-	print str_encrypt
-	print list_encrypt
+	print(str_encrypt)
+	print(list_encrypt)
 
 	# # decrypt
 	str_decrypt, list_decrypt = decrypt(list_encrypt, d, n)
-	print "decrypt:=> " + "".join(chr(i) for i in list_decrypt)	
+	print("decrypt:=> " + "".join(chr(i) for i in list_decrypt)	)
 # MY CODE IS VERY SLOW. BEACAUSE OF KEY IS SO BIG. HAHA

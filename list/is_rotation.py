@@ -19,5 +19,5 @@ list2d = [4, 6, 5, 7, 1, 2, 3]
 list2e = [4, 5, 6, 7, 0, 2, 3]
 list2f = [1, 2, 3, 4, 5, 6, 7]
 
-# print is_rotation(A, B)
-print is_rotation(list1, list2b)
+# print(is_rotation(A, B))
+print(is_rotation(list1, list2b))

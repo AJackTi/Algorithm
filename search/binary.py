@@ -19,6 +19,6 @@ if __name__ == "__main__":
     left = 0
     right = len(lst)-1
     if binary_search(2, mid, left, right, lst) == -1:
-        print "Not Found"
+        print("Not Found")
     else:
-        print binary_search(2, mid, left, right, lst)
+        print(binary_search(2, mid, left, right, lst))

@@ -22,11 +22,11 @@ def bubble(lst):
 		for i,j in zip(reversed(range(temp+1,len(lst))), reversed(range(temp,len(lst)-1))):
 			if lst[i] < lst[j]:
 				transfer(lst, i, j)
-				print lst
+				print(lst)
 		temp += 1
 	return lst
 
 if __name__ == "__main__":
 	lst = createlist()
-	print (bubble(lst))
+	print(bubble(lst))
 		

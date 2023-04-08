@@ -39,6 +39,6 @@ def rot13_decrypt(input):
 
 if __name__ == "__main__":
     input = LOWERCASE + UPPERCASE
-    print input
-    print rot13_encrypt(input)
-    print rot13_decrypt( rot13_encrypt(input) )
+    print(input)
+    print(rot13_encrypt(input))
+    print(rot13_decrypt( rot13_encrypt(input) ))

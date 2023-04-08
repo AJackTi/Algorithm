@@ -23,14 +23,14 @@ class Queue:
 
 if __name__ == "__main__":
 	q = Queue()
-	print "Is empty: " + str(q.isEmpty())
+	print("Is empty: " + str(q.isEmpty()))
 	q.push(1)
 	q.push(2)
 	q.push(3)
-	print "List: " + str(q.items)
+	print("List: " + str(q.items))
 
-	print "Pop item at position 0: " + str(q.pop())
-	print "List: " + str(q.items)
+	print("Pop item at position 0: " + str(q.pop()))
+	print("List: " + str(q.items))
 
-	print "Peek of queue: " + str(q.peek())
-	print "Size: " + str(q.size())
+	print("Peek of queue: " + str(q.peek()))
+	print("Size: " + str(q.size()))

@@ -8,7 +8,7 @@ class Heap(object):
 
 	def insert(self, item):
 		if self.isFull():
-			print "Heap is full..."
+			print("Heap is full...")
 			return
 
 		self.currentPosition = self.currentPosition + 1
@@ -26,7 +26,7 @@ class Heap(object):
 	def heapsort(self):
 		for i in range(0, self.currentPosition+1):
 			temp = self.heap[0]
-			print str(temp)
+			print(str(temp))
 			self.heap[0] = self.heap[self.currentPosition-i]
 			self.heap[self.currentPosition-i]=temp
 			self.fixDown(0, self.currentPosition-i-1)
@@ -72,4 +72,4 @@ if __name__ == "__main__":
 	heap.insert(2)
 
 	heap.heapsort()
-	# print heap.currentPosition
+	# print(heap.currentPosition)

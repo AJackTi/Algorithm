@@ -7,8 +7,8 @@ for num in nums:
     heappush(heap, num)
 
 while heap:
-    print heappop(heap)
+    print(heappop(heap))
 
 heapify(nums)
 
-print nums
+print(nums)

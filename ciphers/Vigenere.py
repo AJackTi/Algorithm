@@ -49,6 +49,6 @@ def lowercase_to_uppercase(input):
 
 if __name__ == "__main__":
     str_input, str_key = parse()
-    print "With input: " + str_input
-    print "And key: " + str_key
-    print list_to_string(process(string_to_list(str_input), string_to_list(str_key)))
+    print("With input: " + str_input)
+    print("And key: " + str_key)
+    print(list_to_string(process(string_to_list(str_input), string_to_list(str_key))))

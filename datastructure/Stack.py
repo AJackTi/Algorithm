@@ -23,17 +23,17 @@ class Stack:
 
 if __name__ == "__main__":
 	s = Stack()
-	print "Is empty: " + str(s.isEmpty())
+	print("Is empty: " + str(s.isEmpty()))
 	s.push(4)
 	s.push('dog')
 	s.push(True)
 	s.push(8.4)
-	print "Peek of Stack: " + str(s.peek())
-	print "Items:",
-	print s.items
-	print "Size: " + str(s.size())
-	print "Pop: " + str(s.pop())
+	print("Peek of Stack: " + str(s.peek()))
+	print("Items:")
+	print(s.items)
+	print("Size: " + str(s.size()))
+	print("Pop: " + str(s.pop()))
 
-	print "Items:",
-	print s.items
-	print "Size: " + str(s.size())
+	print("Items:")
+	print(s.items)
+	print("Size: " + str(s.size()))

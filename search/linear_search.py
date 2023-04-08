@@ -11,8 +11,8 @@ def create_list():
 
 if __name__ == "__main__":
 	lst = create_list()
-	print lst
+	print(lst)
 	if linear_search(10, lst) != -1:
-		print linear_search(10, lst)
+		print(linear_search(10, lst))
 	else:
-		print "Not Found"
+		print("Not Found")
