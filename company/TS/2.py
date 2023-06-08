@@ -21,19 +21,28 @@ def stockPairs(stocksProfit, target):
     return ans
 
 def removeDuplicate(sliceList, notRemove):
-    allKeys = {}
+    all_keys = {}
+    repetition_dict = {}
     lst = []
     for i in range(len(sliceList)):
-        if sliceList[i] not in allKeys: 
-            allKeys[sliceList[i]] = True
+        if sliceList[i] in repetition_dict and repetition_dict[sliceList[i]] == 2:
+            continue
+        
+        if sliceList[i] not in all_keys: 
+            all_keys[sliceList[i]] = True
             lst.append(sliceList[i])
         elif sliceList[i] == notRemove:
                 lst.append(sliceList[i])
 
+        if sliceList[i] not in repetition_dict:
+            repetition_dict[sliceList[i]] = 1
+        else:
+            repetition_dict[sliceList[i]] += 1
+
     return lst
     
 if __name__ == '__main__':
-    stocksProfit = [6, 6, 3, 9, 3, 5, 1]
+    stocksProfit = [6, 6, 6, 3, 9, 3, 5, 1]
     target = 12
 
     # stocksProfit = [1, 3, 46, 1, 3, 9]
