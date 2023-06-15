@@ -1,6 +1,7 @@
 def arrangeCoins(n: int) -> int:
     left = 1
-    right = n
+    # right = n
+    right = int(sqrt(2*n+1/4) + 1/2)
     ans = 1
 
     def calcCoinsRequired(r):
