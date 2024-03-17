@@ -1,12 +1,12 @@
 def maxProduct(nums: list[int]) -> int:
     res = max(nums)
-    curMax, curMin = 1, 1
+    cur_max, cur_min = 1, 1
 
     for n in nums:
-        tmp = curMax * n
-        curMax = max(n * curMax, n * curMin, n)
-        curMin = min(tmp, n * curMin, n)
-        res = max(res, curMax)
+        tmp = cur_max * n
+        cur_max = max(n * cur_max, n * cur_min, n)
+        cur_min = min(tmp, n * cur_min, n)
+        res = max(res, cur_max)
 
     return res
 
